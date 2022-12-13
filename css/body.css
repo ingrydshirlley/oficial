@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    width: 100vw;
+    
+    background-image: linear-gradient( 115deg, #ffffff, #ffffff 1%, #ffffff 11%, #ffffff 15%, 
+    #ffffff 23.57%, transparent 23.57%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #ffffff 23.57%, #ffffff 41%, #ffffff 45%,
+	transparent 45%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #ffffff 45%, #ffffff 50%, #ffffff 52%, 
+    #ffffff 55%, transparent 45%, transparent 100% ),
+	
+    linear-gradient( 109deg, transparent, #FE6767 55%, #FE6767 68%,  #FE6767 73%, 
+    transparent 73%, transparent 100% ),
+	
+    linear-gradient(#FE6767 100%, #FE6767 100% );
+
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    margin-top: 70px;
+   
+}
+
+.logo{
+    margin-left: 140px;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    color: #FE6767;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 140px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+main{
+}
+
+.bici{
+    background-color: yellow;
+    width: 1050px;
+    transform: translate(10%);
+}
+
+.description{
+    display: grid;
+    background-color: violet;
+}
+
+.description_title{
+    height: auto;
+    font-weight: 700;
+    font-size: 64px;
+    font-style: italic;
+    color:#545454;
+    margin-left: 140px;
+    margin-top: 247px;
+    width: 750px;
+}
+
+.description_title2{
+    height: auto;
+    font-weight: 700;
+    font-size: 64px;
+    font-style: italic;
+    color: #FE6767;
+    margin-left: 140px;
+}
+
+.description_title2::after{
+    content: ".";
+    color:#545454;
+}
+
+.description_text{
+    color: #B6B6B6;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 140px;
+    width: 500px;
+}
+
+.botao{
+    width: 300px;
+    height: 50px;
+}
+
+.book{
+    width: 300px;
+    height: 50px;
+    background-color: #FE6767;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+}
+
+.parteDeBaixo{
+    display: flex;
+    width: 700px;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.learnMore{
+    align-self: center;
+    width: 100%;
+}
+
+.learn{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.imagem{
+    width: 986px;
+    display: flex;
+    justify-content: start;
+    transform: translateX(50px);
+}
+.vermelha{
+    z-index: -3;
+
+}
+.description{
+    margin-left: 40PX;
+}
+.informacoes{
+    background-color: wheat;
+}
+
+footer{
+    background-color:rgb(136, 104, 82);
+    height: 57px;
+}
