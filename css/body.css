@@ -5,6 +5,7 @@
     text-decoration: none;
     color: inherit;
 }
+
 body{
     width: 100vw;
     
@@ -16,9 +17,6 @@ body{
 	
     linear-gradient( 109deg, transparent, #ffffff 45%, #ffffff 50%, #ffffff 52%, 
     #ffffff 55%, transparent 45%, transparent 100% ),
-	
-    linear-gradient( 109deg, transparent, #FE6767 55%, #FE6767 68%,  #FE6767 73%, 
-    transparent 73%, transparent 100% ),
 	
     linear-gradient(#FE6767 100%, #FE6767 100% );
 
@@ -50,17 +48,28 @@ header{
 }
 
 main{
+    display: grid;
+    grid-template-areas: "text img" "info info";
+}
+
+.bikes{
+    grid-area: img;
 }
 
 .bici{
-    background-color: yellow;
-    width: 1050px;
-    transform: translate(10%);
+    width: 980px;
 }
 
-.description{
-    display: grid;
-    background-color: violet;
+.bicicleta{
+    width: 1100px;
+    height: 550px;
+    position: absolute;
+    transform: translate(-25%, 20%);
+}
+
+.bicicleta2{
+    position: absolute;
+    transform: translate(310%, 0%);
 }
 
 .description_title{
@@ -122,6 +131,7 @@ main{
 .learnMore{
     align-self: center;
     width: 100%;
+    color:#FE6767
 }
 
 .learn{
@@ -130,24 +140,77 @@ main{
     font-weight: 500;
 }
 
-.imagem{
-    width: 986px;
-    display: flex;
-    justify-content: start;
-    transform: translateX(50px);
-}
-.vermelha{
-    z-index: -3;
-
-}
 .description{
     margin-left: 40PX;
-}
-.informacoes{
-    background-color: wheat;
+    display: grid;
+    width: 900px;
+    grid-area: text;
 }
 
-footer{
-    background-color:rgb(136, 104, 82);
-    height: 57px;
+.informacoes{
+    width: 100%;
+    grid-area: info;
+    margin-top: 47px;
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+}
+
+#titulo{
+    color: #B6B6B6;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#numero{
+    color: #FE6767;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 45px;
+}
+
+#titulo2{
+    color: #545454;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#numero2{
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.esquerda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: translateX(-5%);
+}
+
+.battery{
+    display: grid;
+    text-align: center;
+}
+
+.assist{
+    display: grid;
+    text-align: right;
+}
+
+.direita{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    transform: translateX(-5%);
+}
+
+.charging{
+    display: grid;
+    text-align: end;
+}
+
+.peso{
+    display: grid;
+    text-align: center;
 }
